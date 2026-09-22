@@ -1,105 +1,203 @@
+```html
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Profil Aldi</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
+    <!-- Navbar -->
+    <nav>
+        <a href="#profil">Profil</a>
+        <a href="#kegiatan">Kegiatan</a>
+        <a href="#playlist">Playlist</a>
+        <a href="#form">Form</a>
+    </nav>
+
+    <!-- Header -->
+    <header id="profil">
         <h1>Profil Saya</h1>
         <p>Selamat datang di halaman sederhana saya.</p>
+        <button onclick="darkMode()">Mode Gelap</button>
     </header>
 
     <hr>
 
-    <h2>Tentang Saya</h2>
+    <!-- Tentang Saya -->
+    <section class="card">
+        <h2>Tentang Saya</h2>
 
-    <p align="left">
-        Saya adalah mahasiswa Informatika yang sedang belajar membuat website
-        menggunakan HTML.
-    </p>
+        <p align="left">
+            Saya adalah mahasiswa Informatika yang sedang belajar membuat website
+            menggunakan HTML.
+        </p>
 
-    <p align="center">
-        Saya juga tertarik dengan dunia <b>fashion</b> dan <i>streetwear</i>.
-    </p>
+        <p align="center">
+            Saya juga tertarik dengan dunia <b>fashion</b> dan <i>streetwear</i>.
+        </p>
 
-    <p align="right">
-        Salah satu kegiatan yang saya lakukan adalah mengembangkan clothing brand.
-    </p>
+        <p align="right">
+            Salah satu kegiatan yang saya lakukan adalah mengembangkan clothing brand.
+        </p>
+    </section>
 
-    <h2>Format Teks</h2>
+    <!-- Foto -->
+    <section class="card">
 
-<p>
-    <b>Ini tulisan tebal</b><br>
-    <i>Ini tulisan miring</i><br>
-    <u>Ini tulisan bergaris bawah</u><br>
-    <font color="red">Ini tulisan berwarna</font>
-</p>
+  <video controls width="100%">
+    <source src="video.mp4" type="video/mp4">
+</video>
 
-<h2>Kegiatan Saya</h2>
+    </section>
 
-<ul>
-    <li>Kuliah</li>
-    <li>Mengerjakan tugas</li>
-    <li>Membuat desain</li>
-</ul>
+    <!-- Kegiatan -->
+    <section class="card" id="kegiatan">
+        <h2>Kegiatan Saya</h2>
 
-<ol>
-    <li>Kuliah</li>
-    <li>Mengerjakan tugas</li>
-    <li>Mengembangkan clothing brand</li>
-</ol>
+        <ul>
+            <li>Kuliah</li>
+            <li>Mengerjakan tugas</li>
+            <li>Membuat desain</li>
+        </ul>
 
-<h2>Foto</h2>
-<img src="aldi.jpg" width="300">
+        <ol>
+            <li>Kuliah</li>
+            <li>Mengerjakan tugas</li>
+            <li>Mengembangkan clothing brand</li>
+        </ol>
+    </section>
 
-<h2>Link</h2>
-<a href="https://github.com" target="_blank">GitHub</a>
+    <!-- Format Teks -->
+    <section class="card">
+        <h2>Format Teks</h2>
 
-<h2>Data Ukuran Baju</h2>
+        <p>
+            <b>Ini tulisan tebal</b><br>
+            <i>Ini tulisan miring</i><br>
+            <u>Ini tulisan bergaris bawah</u><br>
+            <font color="red">Ini tulisan berwarna</font>
+        </p>
+    </section>
 
-<table border="1">
-    <tr>
-        <th>Ukuran</th>
-        <th>Lebar</th>
-        <th>Panjang</th>
-    </tr>
-    <tr>
-        <td>M</td>
-        <td>57 cm</td>
-        <td>63 cm</td>
-    </tr>
-    <tr>
-        <td>L</td>
-        <td>59 cm</td>
-        <td>65 cm</td>
-    </tr>
-    <tr>
-        <td>XL</td>
-        <td>64 cm</td>
-        <td>68 cm</td>
-    </tr>
-</table>
+    <!-- Ukuran Baju -->
+    <section class="card">
+        <h2>Data Ukuran Baju</h2>
 
-<h2>Form</h2>
+        <table>
+            <tr>
+                <th>Ukuran</th>
+                <th>Lebar</th>
+                <th>Panjang</th>
+            </tr>
 
-<form>
-    <label>Nama:</label>
-    <input type="text">
+            <tr>
+                <td>M</td>
+                <td>57 cm</td>
+                <td>63 cm</td>
+            </tr>
 
-    <br><br>
+            <tr>
+                <td>L</td>
+                <td>59 cm</td>
+                <td>65 cm</td>
+            </tr>
 
-    <label>Email:</label>
-    <input type="email">
+            <tr>
+                <td>XL</td>
+                <td>64 cm</td>
+                <td>68 cm</td>
+            </tr>
+        </table>
+    </section>
 
-    <br><br>
+    <!-- Playlist -->
+    <section class="card" id="playlist">
+        <h2>My Playlist</h2>
 
-    <label>Pesan:</label>
-    <br>
-    <textarea rows="4" cols="30"></textarea>
+        <!-- GRID -->
+        <div class="playlist">
 
-    <br><br>
+            <div class="song">
+                <img src="Eyes Without A Face - YouTube Music.jpg">
 
-    <input type="submit" value="Kirim">
-</form>
+                <h3>Eyes Without A Face</h3>
+                <p>Billy Idol</p>
+
+                <audio controls>
+                    <source src="Billy Idol - Eyes Without A Face.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="song">
+                <img src="oasis - wonderwall.jpg">
+
+                <h3>Wonderwall</h3>
+                <p>Oasis</p>
+
+                <audio controls>
+                    <source src="Oasis - Wonderwall (Official Video).mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+            <div class="song">
+                <img src="Sunday Morning_.jpg">
+
+                <h3>Sunday Morning</h3>
+                <p>Maroon 5</p>
+
+                <audio controls>
+                    <source src="Maroon 5 - Sunday Morning.mp3" type="audio/mpeg">
+                </audio>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Link -->
+    <section class="card">
+        <h2>Link GitHub</h2>
+
+        <a href="https://github.com" target="_blank">
+            GitHub
+        </a>
+    </section>
+
+    <!-- Form -->
+    <section class="card" id="form">
+        <h2>Form</h2>
+
+        <form>
+            <label>Nama:</label>
+            <input type="text">
+
+            <br><br>
+
+            <label>Email:</label>
+            <input type="email">
+
+            <br><br>
+
+            <label>Pesan:</label>
+            <br>
+
+            <textarea rows="4" cols="30"></textarea>
+
+            <br><br>
+
+            <input type="submit" value="Kirim">
+        </form>
+    </section>
+
+    <script>
+        function darkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+
+</body>
+
+</html>
+```

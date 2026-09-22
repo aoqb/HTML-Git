@@ -1,0 +1,256 @@
+```css
+/* CSS RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* SELECTOR BODY */
+body {
+    font-family: Arial, sans-serif;
+
+    /* LINEAR GRADIENT */
+    background: linear-gradient(to right, skyblue, rgb(95, 110, 114));
+
+    color: black;
+    padding: 20px;
+}
+
+
+/* NAVBAR */
+nav {
+    display: flex; /* FLEXBOX */
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: black; /* SELECTOR nav a */
+    text-decoration: none;
+    font-weight: bold;
+
+    /* TRANSITION */
+    transition: 0.3s;
+}
+
+
+/* HOVER EFFECT */
+nav a:hover {
+    color: white;
+
+    /* TRANSFORM */
+    transform: translateY(-3px);
+}
+
+
+/* HEADER */
+header {
+    text-align: center;
+    padding: 30px;
+}
+
+
+/* BUTTON */
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+
+/* CARD */
+.card {
+    background-color: rgba(255, 255, 255, 0.85);
+
+    padding: 20px;
+    margin: 20px auto;
+
+    max-width: 900px;
+
+    border-radius: 12px;
+
+    /* BOX SHADOW */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+    /* TRANSITION */
+    transition: 0.3s;
+}
+
+
+/* CARD HOVER */
+.card:hover {
+    /* TRANSFORM */
+    transform: translateY(-3px);
+}
+
+
+/* JUDUL */
+h2 {
+    margin-bottom: 15px;
+}
+
+
+/* FOTO */
+.foto {
+    border-radius: 10px;
+}
+
+
+/* TABLE */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #ddd;
+}
+
+
+/* PLAYLIST */
+/* GRID */
+.playlist {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+
+/* SONG CARD */
+.song {
+    background-color: white;
+
+    padding: 10px;
+
+    border-radius: 10px;
+
+    /* BOX SHADOW */
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+
+    /* TRANSITION */
+    transition: 0.3s;
+}
+
+
+/* SONG HOVER */
+.song:hover {
+    /* TRANSFORM */
+    transform: translateY(-5px);
+}
+
+
+/* GAMBAR LAGU */
+.song img {
+    width: 100%;
+    height: 200px;
+
+    object-fit: contain;
+
+    border-radius: 8px;
+}
+
+
+/* JUDUL LAGU */
+.song h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+
+/* ARTIST */
+.song p {
+    color: gray;
+    margin-bottom: 10px;
+}
+
+
+/* AUDIO */
+audio {
+    width: 100%;
+}
+
+
+/* FORM */
+input,
+textarea {
+    padding: 8px;
+
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+
+/* MODE GELAP */
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+.dark-mode .card {
+    background-color: #222;
+}
+
+.dark-mode .song {
+    background-color: #333;
+}
+
+.dark-mode .song h3 {
+    color: white;
+}
+
+.dark-mode .song p {
+    color: lightgray;
+}
+
+.dark-mode nav a {
+    color: white;
+}
+
+
+/* RESPONSIVE DESIGN */
+/* Ketika layar kecil */
+@media (max-width: 600px) {
+
+    body {
+        padding: 10px;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    /* GRID menjadi satu kolom */
+    .playlist {
+        grid-template-columns: 1fr;
+    }
+
+    .song img {
+        height: auto;
+    }
+
+    .card {
+        padding: 15px;
+    }
+}
+```
